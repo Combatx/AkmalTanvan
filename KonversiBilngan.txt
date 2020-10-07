@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Pratikum;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ridho
+ */
+public class Algoritma_konversi_bilangan {
+public static void main(String args[]){
+    String bi1;
+    Scanner input = new Scanner( System.in );
+    System.out.print("Masukkan bilangan biner  : ");
+         bi1 =input.nextLine();
+    String binaryString = bi1;
+    int temp = Integer.parseInt(binaryString);
+    System.out.println(temp);
+    int power = 0;
+    int decimalNo = 0;
+    while(temp != 0) {
+    int rem = temp % 10;
+    decimalNo = decimalNo + (int) (rem*Math.pow(2, power));
+    power++;
+    temp = temp /10;
+    
+}
+    
+    System.out.println(decimalNo);
+}
+
+    
+}
