@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Pratikum;
+
+
+/**
+ *
+ * @author Ridho
+ */
+public class kdksad {
+    public static void main(String[] args) {
+        double number = 24.4,decimal;
+        int integer;
+do {
+         integer = (int)number;
+decimal = (10 * number - 10 * integer)/10;
+    }while (decimal == 0,4);
+
+
+System.out.println(decimal); 
+
+    }
+}
